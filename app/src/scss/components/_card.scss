@@ -1,0 +1,41 @@
+.card{
+    width: 350px;
+    height: 220px;
+    border-radius: 5px;
+    background-color: var(--VeryDarkMagenta);
+    color: var(--White);
+    padding: 20px;
+    &__user{
+        width: 100%;
+        margin-bottom: 13px;
+        display: flex;
+        align-items: center;
+        &-avatar{
+            img{
+                width: 50px;
+                height: 50px;
+                clip-path: circle(50%);
+            }
+        }
+
+        &-username{
+            margin-left: 10px;
+            .name{
+                font-size: 15px;
+            }
+
+            .info{
+                font-size: 13px;
+                font-weight: 400;
+                color: var(--SofPink);
+            }
+        }
+    }
+
+    &__description{
+        margin-top: 15px;
+        font-size: 15px;
+        font-weight: 400;
+        letter-spacing: 1px;
+    }
+}
